@@ -1,0 +1,173 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 0;
+    background-color: blanchedalmond;
+}
+
+form {
+    margin: auto;
+    background-color: azure;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 700px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+fieldset {
+    border: 2px solid coral;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+}
+
+legend {
+    font-weight: bolder;
+    text-align: left;
+    color: rgb(238, 177, 85);
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    color: rgba(0, 0, 0, 0.925);
+}
+
+input, textarea {
+    margin-top: 5px;
+    padding: 10px;
+    width: calc(100% - 1px);
+    border: 1px solid coral;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: color-mix(in srgb, coral 50%, chocolate 50%);
+    color: black;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 12px;
+    font-size: 20px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: rgb(105, 87, 8);
+}
+
+#resume-display {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    border: 4px solid coral;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+#resume-display h2 {
+    color: black;
+}
+
+#skills-section {
+    display: block;
+}
+
+button#toggle-skills {
+    margin-top: 12px;
+    background-color: coral;
+    color: white;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+button#toggle-skills:hover {
+    background-color: darkorange;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #resume-display {
+        padding: 15px;
+        width: 90%;
+    }
+
+    #skills-section {
+        font-size: 14px;
+    }
+}
+
+/* Tablet responsiveness */
+@media screen and (max-width: 1024px) {
+    form {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #resume-display {
+        padding: 18px;
+        width: 85%;
+    }
+
+    #skills-section {
+        font-size: 16px;
+    }
+}
+
+/* Laptop/desktop responsiveness */
+@media screen and (min-width: 1025px) {
+    form {
+        max-width: 700px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    #resume-display {
+        max-width: 700px;
+        width: 100%;
+        padding: 20px;
+    }
+}
